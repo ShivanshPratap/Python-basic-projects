@@ -40,7 +40,7 @@ def check_winnings(columns, lines, bet, values):
 
 def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
-    for symbol, symbol_count in symbols.items():
+    for symbol, symbol_count in symbols.items(): #by using items will get you keys & value both "Dict"
         for _ in range(symbol_count):
             all_symbols.append(symbol)
 
